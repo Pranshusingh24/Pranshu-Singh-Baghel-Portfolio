@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-dark bg-white antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-8 py-3.5 bg-gradient-to-r from-primary to-red-500 text-white font-semibold rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30;
+  }
+  .btn-secondary {
+    @apply inline-block px-8 py-3.5 bg-transparent text-dark border-2 border-dark font-semibold rounded-lg transition-all duration-300 hover:bg-dark hover:text-white hover:-translate-y-0.5;
+  }
+  .home-section {
+     @apply py-12 md:py-24 px-4 md:px-5 lg:px-[8%];
+  }
+  .section-padding {
+    @apply py-24 px-4 md:px-8 lg:px-[8%];
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold text-dark mb-3 relative inline-block;
+  }
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full;
+  }
+}
