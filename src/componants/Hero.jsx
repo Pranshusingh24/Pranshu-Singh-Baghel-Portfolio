@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { FaReact, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaReact} from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -35,14 +35,6 @@ const Hero = () => {
             <Link to="contact" smooth={true} duration={500} className="btn-secondary text-center cursor-pointer">Get In Touch</Link>
           </div>
 
-          {/* Social Icons (Uncomment to enable) */}
-          {/* <div className="flex gap-4 justify-center lg:justify-start">
-            {[FaGithub, FaLinkedin].map((Icon, i) => (
-              <a key={i} href="#" className="w-11 h-11 border-2 border-gray-200 rounded-xl flex items-center justify-center text-gray-500 hover:border-primary hover:text-primary hover:-translate-y-1 transition-all">
-                <Icon className="text-xl" />
-              </a>
-            ))}
-          </div> */}
         </div>
 
         {/* Right Side: Code Block Visual */}
